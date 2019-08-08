@@ -1,4 +1,4 @@
-view: user {
+view: abstract_user {
   sql_table_name: abstract_user ;;
 
   dimension: database_id {
@@ -10,6 +10,11 @@ view: user {
 
   dimension: company {
     sql: ${TABLE}.organizations ;;
+
+    label: "Company ID"
   }
 
+  dimension: name {
+    sql:  ${TABLE}.display_name ;;
+  }
 }
