@@ -9,7 +9,7 @@ view: abstract_user {
   }
 
   dimension: company {
-    sql: ${TABLE}.organizations ;;
+    sql: ${TABLE}.organization ;;
 
     label: "Company ID"
   }
